@@ -38,14 +38,24 @@
         </p>
         <button>Get started now!</button>
       </section>
-      <section id="weather-search">
-        <h3>Check the Weather</h3>
-        <div class="search-box">
-          <input type="text" id="cityInput" placeholder="Enter a city" />
-          <button id="searchBtn">Search</button>
-        </div>
-        <div id="result" class="result-box">
-          <!-- Os dados da API serão exibidos aqui -->
+      <section id="weather-info">
+        <form>
+          <div class="input-wrapper">
+            <label for="city">Enter your desired city below</label>
+            <input type="text" id="city" required />
+          </div>
+          <button>Get the weather</button>
+        </form>
+        <div id="weather-response">
+          <ul>
+            <li>Current Temperature</li>
+            <li>Feels Like Temperature</li>
+            <li>Min and Max Temperature</li>
+            <li>Current Conditions</li>
+            <li>Current Precipitation</li>
+            <li>Wind Speed</li>
+            <li>Humidity</li>
+          </ul>
         </div>
       </section>
     </div>

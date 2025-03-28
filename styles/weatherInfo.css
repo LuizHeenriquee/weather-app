@@ -1,0 +1,44 @@
+#weather-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  & #weather-response {
+    width: 30rem;
+    height: 30rem;
+    border: 1px solid var(--text-color);
+
+    & ul {
+      list-style: none;
+    }
+  }
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+
+  width: 100%;
+  margin-bottom: 2rem;
+}
+
+@media (min-width: 768px) {
+  form {
+    width: 60%;
+  }
+}
+
+@media (min-width: 1024px) {
+  #weather-info {
+    flex-direction: row;
+    justify-content: center;
+    gap: 2rem;
+  }
+
+  form {
+    width: 30%;
+  }
+}

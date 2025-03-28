@@ -23,12 +23,36 @@ body {
 }
 
 .container {
-  padding: 2rem 2rem 0 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding: 2rem;
 }
 
 .highlight {
   background-color: var(--details-color);
   border-radius: 0.5rem;
+}
+
+.input-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+
+  width: 100%;
+
+  & input {
+    border: 1px solid var(--text-color);
+    border-radius: 0.5rem;
+    padding: 0.5rem 1rem 0.5rem 1rem;
+    color: var(--text-color);
+    outline: none;
+    transition: all 0.3s ease-in-out;
+
+    &:focus {
+      border-color: var(--main-color);
+    }
+  }
 }
 
 button {
