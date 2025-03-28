@@ -1,0 +1,6 @@
+/* Global Settings */
+@import url(global.css);
+
+/* Components */
+@import url(header.css);
+@import url(hero.css);

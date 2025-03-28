@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../styles/index.css" />
+    <link
+      rel="shortcut icon"
+      href="../assets/weather.ico"
+      type="image/x-icon"
+    />
+    <title>Weather App</title>
+  </head>
+  <body>
+    <header>
+      <h1>Weather App</h1>
+      <nav>
+        <a href="#">Home</a>
+        <a href="#">About</a>
+      </nav>
+    </header>
+    <div class="container">
+      <section id="hero">
+        <h2>
+          Travel through the climates of any city
+          <span class="highlight">around the world</span>! 🌎
+        </h2>
+        <p>
+          With a simple search you can find out what's going on in your favorite
+          place!
+        </p>
+        <button>Get started now!</button>
+      </section>
+      <section id="weather-search">
+        <h3>Check the Weather</h3>
+        <div class="search-box">
+          <input type="text" id="cityInput" placeholder="Enter a city" />
+          <button id="searchBtn">Search</button>
+        </div>
+        <div id="result" class="result-box">
+          <!-- Os dados da API serão exibidos aqui -->
+        </div>
+      </section>
+    </div>
+    <script type="module" src="../js/index.js"></script>
+  </body>
+</html>
