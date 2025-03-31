@@ -10,12 +10,8 @@
       href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400;1,700&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="../styles/index.css" />
-    <link
-      rel="shortcut icon"
-      href="../assets/weather.ico"
-      type="image/x-icon"
-    />
+    <link rel="stylesheet" href="styles/index.css" />
+    <link rel="shortcut icon" href="assets/weather.ico" type="image/x-icon" />
     <title>Weather App</title>
   </head>
   <body>
@@ -36,7 +32,7 @@
           With a simple search you can find out what's going on in your favorite
           place!
         </p>
-        <button>Get started now!</button>
+        <button id="getStartedBtn">Get started now!</button>
       </section>
       <section id="weather-info">
         <form>
@@ -44,21 +40,11 @@
             <label for="city">Enter your desired city below</label>
             <input type="text" id="city" required />
           </div>
-          <button>Get the weather</button>
+          <button id="getWeatherBtn" type="button">Get the weather</button>
         </form>
-        <div id="weather-response">
-          <ul>
-            <li>Current Temperature</li>
-            <li>Feels Like Temperature</li>
-            <li>Min and Max Temperature</li>
-            <li>Current Conditions</li>
-            <li>Current Precipitation</li>
-            <li>Wind Speed</li>
-            <li>Humidity</li>
-          </ul>
-        </div>
+        <div id="weather-response"></div>
       </section>
     </div>
-    <script type="module" src="../js/index.js"></script>
+    <script type="module" src="js/index.js"></script>
   </body>
 </html>
