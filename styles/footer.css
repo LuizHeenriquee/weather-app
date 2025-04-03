@@ -1,0 +1,42 @@
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  padding: 2rem;
+
+  background-color: var(--main-color);
+  color: var(--bg-color);
+
+  & #contribution-message {
+    text-align: center;
+
+    & a {
+      color: var(--details-color);
+    }
+  }
+
+  & #contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+
+    & p {
+      font-size: 1.8rem;
+    }
+
+    & #footer-nav {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 1rem;
+
+      & .footer-nav-link {
+        color: var(--details-color);
+      }
+    }
+  }
+}
