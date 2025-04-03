@@ -1,0 +1,54 @@
+#about {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 2rem;
+
+  & h2 {
+    margin-bottom: 1rem;
+    color: var(--main-color);
+  }
+
+  & ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+
+    & li a {
+      color: var(--text-color);
+    }
+  }
+}
+
+#project-infos {
+  & ul {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  & ul li {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+
+    & .list-item-title {
+      color: var(--main-color);
+    }
+
+    & .list-item-p {
+      color: var(--text-color);
+    }
+  }
+}
+
+#project-song {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 1rem;
+
+  & h2 {
+    color: var(--main-color);
+  }
+}
