@@ -45,6 +45,7 @@ export function displayWeather(data) {
       <p><strong>Wind Speed:</strong> ${windspeed} km/h</p>
   `;
   } else {
-    weatherResponse.innerHTML = "<p>Fudeu</p>";
+    weatherResponse.innerHTML =
+      "<p>Não foi possível apresentar as estatísticas.</p>";
   }
 }
