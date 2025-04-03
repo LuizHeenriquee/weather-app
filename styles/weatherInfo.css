@@ -2,15 +2,15 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
 
   & #weather-response {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
     width: 30rem;
     height: 30rem;
-    border: 1px solid var(--text-color);
-
-    & ul {
-      list-style: none;
-    }
   }
 }
 
@@ -33,8 +33,6 @@ form {
 
 @media (min-width: 1024px) {
   #weather-info {
-    flex-direction: row;
-    justify-content: center;
     gap: 2rem;
   }
 
